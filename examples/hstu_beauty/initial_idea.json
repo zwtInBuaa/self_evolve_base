@@ -1,0 +1,21 @@
+{
+  "description": "The HSTU model introduces a non-softmax attention mechanism for sequential recommendation, replacing softmax with SiLU-gated attention. It masks attention scores with 0.0 instead of -inf to avoid NaN issues for fully-masked rows. Output embeddings are L2-normalized, and logits are temperature-scaled for stable sampled softmax training. The model is evaluated on the Amazon Beauty dataset using leave-one-out evaluation.",
+  "motivation": "The motivation is to improve sequential recommendation by addressing stability issues in softmax attention (NaN rows) and possibly enhancing model capacity via SiLU-gated interactions. The non-softmax mechanism may allow the model to retain more granular attention scores without normalization, and the temperature scaling helps with sampled softmax training stability.",
+  "implementation_notes": "The core idea revolves around SiLU-gated attention, which is a non-softmax approach. Masking with 0.0 prevents NaN when a row is entirely masked, a known issue in softmax attention. L2 normalization and temperature scaling are common techniques for stability in large-vocabulary softmax. The model is applied to a specific dataset (Amazon Beauty) with leave-one-out, a standard sequential recommendation evaluation protocol.",
+  "pseudocode": "Not provided, but the attention mechanism can be described as: compute attention scores QK^T, apply mask (0 for masked positions, 1 otherwise), then gating = SiLU(linear(Q) * linear(K)), attention_output = (scores * mask) * V, possibly with element-wise multiplication of gating values. The exact formulation is not detailed, but output embeddings are L2-normalized, and logits = (output_emb @ item_emb) / temperature, then sampled softmax.",
+  "originality": {
+    "score": 0,
+    "positive": "novel attention gating",
+    "negative": "combines existing ideas"
+  },
+  "future_potential": {
+    "score": 0,
+    "positive": "beyond transformers",
+    "negative": "incremental reach"
+  },
+  "code_difficulty": {
+    "score": 0,
+    "positive": "high failure rate",
+    "negative": "reasonable"
+  }
+}
