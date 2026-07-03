@@ -1,0 +1,11 @@
+2026-07-04 03:41:29,766 - self_evolverec:133 - __main__ - INFO - Logging to examples/sasrec_baby/logs/Self_EvolveRec_20260704_034129.log
+2026-07-04 03:41:29,770 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 03:41:29,778 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 03:41:29,790 - problem:71 - problem - WARNING - Initial metrics file not found at examples/sasrec_baby/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 03:41:29,791 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 03:41:31,798 - main_code:176 - main_code - INFO - Loading data from data_cache/Baby...
+2026-07-04 03:41:32,027 - main_code:181 - main_code - INFO - Data loaded: 18931 users, 25635 items, 18931 train_users, 18931 eval_users
+2026-07-04 03:41:35,760 - problem:162 - problem - INFO - Program failed to execute with error: 
+                Error type: Train Loss is NaN
+                Error message: Training loss has become NaN. Possible causes include exploding gradients, invalid model outputs, or numerical instability.
+                Traceback: No traceback (loss value checked before backward).

@@ -1,0 +1,13 @@
+{
+  "problem_diagnosis": {
+    "name": "Recommendation",
+    "description": "You are an expert ML engineer tasked with designing and improving *diagnosis tools* for a sequential recommendation model.\n\nGoal: Build probes and metrics that analyze how the recommender behaves (embedding health, sequence sensitivity, popularity biases, etc.).\n\nHardware / Runtime Requirements: Lightweight probes that run on the same device as the model.\n\nAvailable Objects: Trained model embeddings, meta_data, review_data, user_train.\n\nAcceptance Checklist: MODEL_DIAGNOSIS is a single, well-defined JSON-like dict with metric values and definitions.",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea_diagnosis": {
+    "title": "Model Diagnosis Tools",
+    "content": "Improve the model diagnosis tool through mathematical analysis, code analysis, and research paper analysis",
+    "supplement": "https://arxiv.org/pdf/1808.09781"
+  }
+}

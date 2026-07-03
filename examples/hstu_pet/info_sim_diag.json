@@ -1,0 +1,13 @@
+{
+  "problem_diagnosis": {
+    "name": "Recommendation",
+    "description": "You are an expert ML engineer tasked with designing and improving *diagnosis tools* for a sequential recommendation model.\n\nGoal:\n- Focus on build probes and metrics that analyze how the recommender behaves (e.g., embedding health, sequence sensitivity, popularity/price/genre biases).\n- Output a stable, machine-readable MODEL_DIAGNOSIS structure.\n\nHardware / Runtime Requirements:\n- The main recommender runs on CPU. Your probes must be lightweight.\n\nAvailable Objects:\n- Access to the trained model (embeddings, output logits).\n- `self.meta_data`: Item information (title, categories, etc.).\n- `self.review_data`: User reviews with ratings and text.\n- `self.user_train`: User histories.\n\nDesign Requirements for Diagnosis:\n- Define clear, interpretable metrics (embedding health, margin quality, etc.).\n- Implement each metric as a small, testable function.\n\nAcceptance Checklist:\n- MODEL_DIAGNOSIS is a single, well-defined JSON-like dict.\n- Metrics can be computed without exhausting CPU memory.\n",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea_diagnosis": {
+    "title": "Model Diagnosis Tools",
+    "content": "Improve the model diagnosis tool through mathematical analysis, code analysis, and research paper analysis",
+    "supplement": "https://arxiv.org/pdf/1808.09781"
+  }
+}

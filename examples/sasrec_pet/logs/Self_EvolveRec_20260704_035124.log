@@ -1,0 +1,13 @@
+2026-07-04 03:51:24,136 - self_evolverec:133 - __main__ - INFO - Logging to examples/sasrec_pet/logs/Self_EvolveRec_20260704_035124.log
+2026-07-04 03:51:24,138 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 03:51:24,151 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 03:51:38,947 - _base_client:1618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.384418 seconds
+2026-07-04 03:51:39,362 - _base_client:1618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.982362 seconds
+2026-07-04 03:51:57,993 - problem:71 - problem - WARNING - Initial metrics file not found at examples/sasrec_pet/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 03:51:57,993 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 03:52:00,023 - main_code:176 - main_code - INFO - Loading data from data_cache/Pet...
+2026-07-04 03:52:00,201 - main_code:181 - main_code - INFO - Data loaded: 22892 users, 41950 items, 22892 train_users, 22892 eval_users
+2026-07-04 03:52:03,704 - problem:162 - problem - INFO - Program failed to execute with error: 
+                Error type: Train Loss is NaN
+                Error message: Training loss has become NaN. Possible causes include exploding gradients, invalid model outputs, or numerical instability.
+                Traceback: No traceback (loss value checked before backward).

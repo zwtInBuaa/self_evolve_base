@@ -1,0 +1,13 @@
+{
+  "problem": {
+    "name": "Random_Baby_Baseline",
+    "description": "Random recommender baseline for the Baby domain. This is a non-learned lower-bound: prediction scores are random (popularity-weighted). There is no training; each epoch re-runs evaluation with the RNG advanced.\n\nHardware / Runtime Requirements:\n- CPU or GPU. Minimal resource usage.\n\nModel Architecture:\n- RandomRecommender: scores are uniform random draws multiplied by item-frequency^(1/temperature).\n- Strategy: popularity, pop_temperature=1.0.\n\nAcceptance Checklist:\n- Runs without errors.\n- Provides baseline HR@5/NDCG@5 metrics for comparison.",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea": {
+    "title": "Random Recommender Baseline for Baby",
+    "content": "A non-learned random recommender baseline. Scores are random draws, optionally weighted by item popularity. Serves as a lower-bound for comparing learned models (HSTU, SASRec, etc.).",
+    "supplement": ""
+  }
+}

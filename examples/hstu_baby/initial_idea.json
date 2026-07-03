@@ -1,0 +1,21 @@
+{
+  "description": "The HSTU model introduces a sequential recommendation architecture that replaces conventional softmax attention with SiLU-gated attention. It applies SiLU activation to the raw attention scores and masks positions with 0.0 (instead of negative infinity), preventing NaN issues in rows with no valid attention. Output embeddings are L2-normalized and logits are scaled by a temperature parameter for stable sampled softmax training. The model is evaluated on the Amazon Baby dataset using leave-one-out evaluation.",
+  "motivation": "The motivation appears to be improving sequential recommendation, particularly for the baby product domain, by addressing limitations of softmax attention (e.g., NaN issues with fully masked rows) and stabilizing training with sampled softmax.",
+  "implementation_notes": "The content mentions L2-normalized output embeddings and temperature-scaled logits for sampled softmax, which is a practical implementation detail. No code or pseudocode is provided.",
+  "pseudocode": "None",
+  "originality": {
+    "score": 0,
+    "positive": "none",
+    "negative": "none"
+  },
+  "future_potential": {
+    "score": 0,
+    "positive": "none",
+    "negative": "average"
+  },
+  "code_difficulty": {
+    "score": 0,
+    "positive": "encouraged",
+    "negative": "required"
+  }
+}

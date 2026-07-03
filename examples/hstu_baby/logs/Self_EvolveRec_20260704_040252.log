@@ -1,0 +1,8 @@
+2026-07-04 04:02:52,277 - self_evolverec:133 - __main__ - INFO - Logging to examples/hstu_baby/logs/Self_EvolveRec_20260704_040252.log
+2026-07-04 04:02:52,279 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 04:02:52,293 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 04:03:24,331 - problem:71 - problem - WARNING - Initial metrics file not found at examples/hstu_baby/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 04:03:24,331 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 04:03:26,414 - main_code:210 - main_code - INFO - Loading data from data_cache/Baby...
+2026-07-04 04:03:26,552 - main_code:215 - main_code - INFO - Data loaded: 18931 users, 25635 items, 18931 train_users, 18931 eval_users
+2026-07-04 04:04:24,431 - main_code:284 - main_code - INFO - Epoch 1/20: loss=7.3108, val_R@5=0.0077, val_R@10=0.0119, val_N@5=0.0049, time=56s, best=-1.0000, no_impr=0

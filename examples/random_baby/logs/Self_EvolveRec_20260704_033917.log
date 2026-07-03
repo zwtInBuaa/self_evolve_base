@@ -1,0 +1,31 @@
+2026-07-04 03:39:17,541 - self_evolverec:133 - __main__ - INFO - Logging to examples/random_baby/logs/Self_EvolveRec_20260704_033917.log
+2026-07-04 03:39:17,545 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 03:39:17,556 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 03:39:43,791 - problem:71 - problem - WARNING - Initial metrics file not found at examples/random_baby/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 03:39:43,792 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 03:39:46,271 - main_code:138 - main_code - INFO - Loading data from data_cache/Baby...
+2026-07-04 03:39:46,422 - main_code:142 - main_code - INFO - Data loaded: 18931 users, 25635 items, 18931 eval_users
+2026-07-04 03:39:58,873 - main_code:169 - main_code - INFO - Epoch 1/20: val_R@5=0.0100, val_R@10=0.0175, val_N@5=0.0065, time=11s, best=0.0175, no_impr=0
+2026-07-04 03:40:03,514 - main_code:169 - main_code - INFO - Epoch 2/20: val_R@5=0.0099, val_R@10=0.0153, val_N@5=0.0063, time=5s, best=0.0175, no_impr=1
+2026-07-04 03:40:07,657 - main_code:169 - main_code - INFO - Epoch 3/20: val_R@5=0.0098, val_R@10=0.0164, val_N@5=0.0060, time=4s, best=0.0175, no_impr=2
+2026-07-04 03:40:11,948 - main_code:176 - main_code - INFO - Test: R@5=0.0058, R@10=0.0108, N@5=0.0037, N@10=0.0053
+2026-07-04 03:40:11,960 - problem:152 - problem - INFO - Program successfully executed with return metrics: {'runtime_minutes': 0.43, 'ndcg_score(0-1)': 0.003698109130580305, 'hr_score(0-1)': 0.005757751835613544, 'combined_score': 0.0049338947536002485, 'simulator_comment': 'Random baseline: R@10=0.0108, N@10=0.0053', 'diagnosis_comment': 'Non-learned baseline. Strategy=popularity, pop_temp=1.0'}
+2026-07-04 03:40:11,961 - problem:158 - problem - INFO - Initial metrics saved to examples/random_baby/initial_metrics.json
+2026-07-04 03:40:11,962 - self_evolverec:247 - __main__ - INFO - User's Feedbacks Random baseline: R@10=0.0108, N@10=0.0053
+2026-07-04 03:40:11,962 - self_evolverec:250 - __main__ - INFO - Model diagnosis Feedbacks Non-learned baseline. Strategy=popularity, pop_temp=1.0
+2026-07-04 03:40:11,964 - database2:629 - database2 - INFO - Set initial best program to root
+2026-07-04 03:40:11,964 - database2:179 - database2 - INFO - Added program root to island 0
+2026-07-04 03:40:11,964 - self_evolverec:278 - __main__ - INFO - Starting evolution from iteration 0 for remaining 21 iterations (total: 21)
+2026-07-04 03:40:11,965 - self_evolverec:288 - __main__ - INFO - Using island-based evolution with 3 islands
+2026-07-04 03:40:11,965 - database2:1048 - database2 - INFO - Island Status:
+2026-07-04 03:40:11,965 - database2:1051 - database2 - INFO -  * Island 0: 1 programs, best=0.0049, avg=0.0049, diversity=0.00, gen=0
+2026-07-04 03:40:11,965 - database2:1051 - database2 - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-04 03:40:11,965 - database2:1051 - database2 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-04 03:40:11,967 - database2:210 - database2 - INFO - Sampled parent root and 0 inspirations
+2026-07-04 03:40:11,968 - researcher_rec:333 - researcher_rec - INFO - Starting deep research with trace_id: trace_c109bd381bdf43d49592563f36b9ab7b
+2026-07-04 03:40:11,968 - researcher_rec:360 - researcher_rec - INFO - Performing Deep Research ...
+2026-07-04 03:40:11,969 - researcher_rec:390 - researcher_rec - INFO - Starting search planning for query: Improve machine learning methods for random_baby ...
+2026-07-04 03:40:47,517 - researcher_rec:401 - researcher_rec - INFO - Completed search planning: 3 searches identified
+2026-07-04 03:40:47,517 - researcher_rec:433 - researcher_rec - INFO - Starting web searches, total: 3 ...
+2026-07-04 03:41:12,588 - researcher_rec:447 - researcher_rec - INFO - Completed 3/3 searches successfully
+2026-07-04 03:41:12,588 - researcher_rec:466 - researcher_rec - INFO - Starting report writing ...

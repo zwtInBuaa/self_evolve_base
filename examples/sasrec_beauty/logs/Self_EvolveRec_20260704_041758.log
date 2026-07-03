@@ -1,0 +1,8 @@
+2026-07-04 04:17:58,146 - self_evolverec:133 - __main__ - INFO - Logging to examples/sasrec_beauty/logs/Self_EvolveRec_20260704_041758.log
+2026-07-04 04:17:58,151 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 04:17:58,164 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 04:18:46,714 - problem:71 - problem - WARNING - Initial metrics file not found at examples/sasrec_beauty/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 04:18:46,714 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 04:18:48,178 - main_code:176 - main_code - INFO - Loading data from data_cache/Beauty...
+2026-07-04 04:18:48,507 - main_code:181 - main_code - INFO - Data loaded: 35931 users, 85200 items, 35931 train_users, 35931 eval_users
+2026-07-04 04:20:45,355 - main_code:238 - main_code - INFO - Epoch 1/20: loss=6.1523, val_R@5=0.0053, val_R@10=0.0077, val_N@5=0.0032, time=115s, best=-1.0000, no_impr=0

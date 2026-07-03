@@ -1,0 +1,8 @@
+2026-07-04 04:16:31,053 - self_evolverec:133 - __main__ - INFO - Logging to examples/sasrec_baby/logs/Self_EvolveRec_20260704_041631.log
+2026-07-04 04:16:31,056 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-04 04:16:31,065 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-04 04:16:31,074 - problem:71 - problem - WARNING - Initial metrics file not found at examples/sasrec_baby/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-04 04:16:31,074 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-04 04:16:32,328 - main_code:176 - main_code - INFO - Loading data from data_cache/Baby...
+2026-07-04 04:16:32,508 - main_code:181 - main_code - INFO - Data loaded: 18931 users, 25635 items, 18931 train_users, 18931 eval_users
+2026-07-04 04:17:23,261 - main_code:238 - main_code - INFO - Epoch 1/20: loss=6.1571, val_R@5=0.0115, val_R@10=0.0197, val_N@5=0.0069, time=49s, best=-1.0000, no_impr=0

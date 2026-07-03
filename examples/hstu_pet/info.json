@@ -1,0 +1,13 @@
+{
+  "problem": {
+    "name": "HSTU_Pet_Recommendation",
+    "description": "You are an expert ML engineer tasked with improving an HSTU (Hierarchical Sequential Transduction Unit) sequential recommendation model on the Pet domain. The model uses SiLU-based attention with L2-normalized embeddings and sampled softmax loss.\n\nHardware / Runtime Requirements:\n- CPU is acceptable (no GPU required). Use device handling (e.g., device = torch.device('cpu'); model.to(device); tensor.to(device)).\n- Training time is limited to ~30 minutes per epoch. Keep model changes efficient.\n\nLibraries Allowed:\n- You may use any libraries that can be imported. (Libraries List: numpy, scipy, pandas, torch, scikit-learn, networkx, transformers, sentence-transformers, regex, RapidFuzz, matplotlib, shapely, omegaconf, PyYAML, openai, requests, tqdm, safetensors)\n\nModel Architecture:\n- HSTU uses SiLU-gated attention (no softmax), L2-normalized output embeddings, and temperature-scaled sampled softmax loss.\n- Key hyperparameters: hidden_dim, linear_dim, attention_dim, num_blocks, num_heads, dropout, attn_dropout, temperature, num_negatives.\n\nAcceptance Checklist:\n- Runs on CPU without OOM errors.\n- Training loss decreases and stays finite.\n- HR@5 and NDCG@5 metrics improve over the baseline.",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea": {
+    "title": "HSTU: Hierarchical Sequential Transduction Unit for Pet Recommendation",
+    "content": "The HSTU model applies SiLU-gated attention (a non-softmax attention mechanism) to sequential recommendation. Unlike standard SASRec which uses softmax attention, HSTU uses SiLU activation on attention scores and masks with 0.0 instead of -inf, avoiding the fully-masked-row NaN problem. Output embeddings are L2-normalized and logits are temperature-scaled for stable sampled softmax training. The model is applied to the Amazon Pet dataset with leave-one-out evaluation.",
+    "supplement": ""
+  }
+}

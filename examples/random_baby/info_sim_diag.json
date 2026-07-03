@@ -1,0 +1,13 @@
+{
+  "problem_diagnosis": {
+    "name": "Random Baseline",
+    "description": "Random recommender baseline - no diagnosis needed.",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea_diagnosis": {
+    "title": "No Diagnosis",
+    "content": "Random recommender has no learned parameters to diagnose.",
+    "supplement": ""
+  }
+}

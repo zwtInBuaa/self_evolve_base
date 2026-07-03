@@ -8,3 +8,352 @@
 2026-07-03 16:56:41,071 - main_code:284 - main_code - INFO - Epoch 1/20: loss=7.2968, val_R@5=0.0113, val_R@10=0.0154, val_N@5=0.0081, time=145s, best=-1.0000, no_impr=0
 2026-07-03 16:58:59,192 - main_code:284 - main_code - INFO - Epoch 2/20: loss=5.5699, val_R@5=0.0177, val_R@10=0.0231, val_N@5=0.0126, time=138s, best=0.0154, no_impr=0
 2026-07-03 17:01:19,465 - main_code:284 - main_code - INFO - Epoch 3/20: loss=4.6512, val_R@5=0.0223, val_R@10=0.0293, val_N@5=0.0162, time=140s, best=0.0231, no_impr=0
+2026-07-03 17:03:50,907 - main_code:284 - main_code - INFO - Epoch 4/20: loss=3.9914, val_R@5=0.0246, val_R@10=0.0329, val_N@5=0.0174, time=151s, best=0.0293, no_impr=0
+2026-07-03 17:06:14,039 - main_code:284 - main_code - INFO - Epoch 5/20: loss=3.4983, val_R@5=0.0271, val_R@10=0.0372, val_N@5=0.0193, time=143s, best=0.0329, no_impr=0
+2026-07-03 17:08:40,102 - main_code:284 - main_code - INFO - Epoch 6/20: loss=3.1478, val_R@5=0.0280, val_R@10=0.0387, val_N@5=0.0195, time=146s, best=0.0372, no_impr=0
+2026-07-03 17:11:07,399 - main_code:284 - main_code - INFO - Epoch 7/20: loss=2.8853, val_R@5=0.0296, val_R@10=0.0406, val_N@5=0.0207, time=147s, best=0.0387, no_impr=0
+2026-07-03 17:13:35,718 - main_code:284 - main_code - INFO - Epoch 8/20: loss=2.7105, val_R@5=0.0296, val_R@10=0.0412, val_N@5=0.0210, time=148s, best=0.0406, no_impr=0
+2026-07-03 17:15:56,850 - main_code:284 - main_code - INFO - Epoch 9/20: loss=2.5814, val_R@5=0.0315, val_R@10=0.0432, val_N@5=0.0221, time=141s, best=0.0412, no_impr=0
+2026-07-03 17:18:14,878 - main_code:284 - main_code - INFO - Epoch 10/20: loss=2.4894, val_R@5=0.0328, val_R@10=0.0444, val_N@5=0.0229, time=138s, best=0.0432, no_impr=0
+2026-07-03 17:20:31,687 - main_code:284 - main_code - INFO - Epoch 11/20: loss=2.4179, val_R@5=0.0328, val_R@10=0.0446, val_N@5=0.0227, time=137s, best=0.0444, no_impr=0
+2026-07-03 17:22:48,260 - main_code:284 - main_code - INFO - Epoch 12/20: loss=2.3763, val_R@5=0.0318, val_R@10=0.0452, val_N@5=0.0222, time=137s, best=0.0446, no_impr=0
+2026-07-03 17:25:06,071 - main_code:284 - main_code - INFO - Epoch 13/20: loss=2.3348, val_R@5=0.0338, val_R@10=0.0460, val_N@5=0.0234, time=138s, best=0.0452, no_impr=0
+2026-07-03 17:27:33,899 - main_code:284 - main_code - INFO - Epoch 14/20: loss=2.3099, val_R@5=0.0339, val_R@10=0.0468, val_N@5=0.0233, time=148s, best=0.0460, no_impr=0
+2026-07-03 17:29:53,997 - main_code:284 - main_code - INFO - Epoch 15/20: loss=2.2803, val_R@5=0.0344, val_R@10=0.0467, val_N@5=0.0237, time=140s, best=0.0468, no_impr=0
+2026-07-03 17:32:13,925 - main_code:284 - main_code - INFO - Epoch 16/20: loss=2.2555, val_R@5=0.0348, val_R@10=0.0478, val_N@5=0.0241, time=140s, best=0.0468, no_impr=1
+2026-07-03 17:34:35,817 - main_code:284 - main_code - INFO - Epoch 17/20: loss=2.2210, val_R@5=0.0334, val_R@10=0.0480, val_N@5=0.0232, time=142s, best=0.0478, no_impr=0
+2026-07-03 17:36:59,810 - main_code:284 - main_code - INFO - Epoch 18/20: loss=2.1861, val_R@5=0.0338, val_R@10=0.0481, val_N@5=0.0233, time=144s, best=0.0480, no_impr=0
+2026-07-03 17:39:20,920 - main_code:284 - main_code - INFO - Epoch 19/20: loss=2.1518, val_R@5=0.0351, val_R@10=0.0485, val_N@5=0.0241, time=141s, best=0.0481, no_impr=0
+2026-07-03 17:41:43,091 - main_code:284 - main_code - INFO - Epoch 20/20: loss=2.1168, val_R@5=0.0358, val_R@10=0.0491, val_N@5=0.0244, time=142s, best=0.0485, no_impr=0
+2026-07-03 17:42:01,631 - main_code:305 - main_code - INFO - Test: R@5=0.0318, R@10=0.0439, N@5=0.0219, N@10=0.0258
+2026-07-03 17:42:01,680 - problem:152 - problem - INFO - Program successfully executed with return metrics: {'runtime_minutes': 47.81, 'ndcg_score(0-1)': 0.024416914107277102, 'hr_score(0-1)': 0.03576299017561437, 'combined_score': 0.031224559748279465, 'simulator_comment': 'HSTU Beauty: Recall@10=0.0439, NDCG@10=0.0258', 'diagnosis_comment': 'Best val: Recall@5=0.0358, NDCG@5=0.0244'}
+2026-07-03 17:42:01,681 - problem:158 - problem - INFO - Initial metrics saved to examples/hstu_beauty/initial_metrics.json
+2026-07-03 17:42:01,683 - self_evolverec:247 - __main__ - INFO - User's Feedbacks HSTU Beauty: Recall@10=0.0439, NDCG@10=0.0258
+2026-07-03 17:42:01,683 - self_evolverec:250 - __main__ - INFO - Model diagnosis Feedbacks Best val: Recall@5=0.0358, NDCG@5=0.0244
+2026-07-03 17:42:01,684 - database2:629 - database2 - INFO - Set initial best program to root
+2026-07-03 17:42:01,684 - database2:179 - database2 - INFO - Added program root to island 0
+2026-07-03 17:42:01,685 - self_evolverec:278 - __main__ - INFO - Starting evolution from iteration 0 for remaining 21 iterations (total: 21)
+2026-07-03 17:42:01,685 - self_evolverec:288 - __main__ - INFO - Using island-based evolution with 3 islands
+2026-07-03 17:42:01,685 - database2:1048 - database2 - INFO - Island Status:
+2026-07-03 17:42:01,685 - database2:1051 - database2 - INFO -  * Island 0: 1 programs, best=0.0312, avg=0.0312, diversity=0.00, gen=0
+2026-07-03 17:42:01,686 - database2:1051 - database2 - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-03 17:42:01,686 - database2:1051 - database2 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-07-03 17:42:01,688 - database2:210 - database2 - INFO - Sampled parent root and 0 inspirations
+2026-07-03 17:42:01,689 - researcher_rec:333 - researcher_rec - INFO - Starting deep research with trace_id: trace_6ec64205a93c491cb27f993dd3dbf0a3
+2026-07-03 17:42:01,689 - researcher_rec:360 - researcher_rec - INFO - Performing Deep Research ...
+2026-07-03 17:42:01,689 - researcher_rec:390 - researcher_rec - INFO - Starting search planning for query: Improve machine learning methods for hstu_beauty ...
+2026-07-03 17:42:30,715 - researcher_rec:401 - researcher_rec - INFO - Completed search planning: 3 searches identified
+2026-07-03 17:42:30,715 - researcher_rec:433 - researcher_rec - INFO - Starting web searches, total: 3 ...
+2026-07-03 17:42:58,058 - researcher_rec:447 - researcher_rec - INFO - Completed 3/3 searches successfully
+2026-07-03 17:42:58,058 - researcher_rec:466 - researcher_rec - INFO - Starting report writing ...
+2026-07-03 17:44:40,635 - _base_client:1618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.433785 seconds
+2026-07-03 17:46:33,837 - researcher_rec:492 - researcher_rec - INFO - Completed report writing
+2026-07-03 17:48:38,706 - researcher_rec:433 - researcher_rec - INFO - Starting web searches, total: 3 ...
+2026-07-03 17:49:32,615 - researcher_rec:447 - researcher_rec - INFO - Completed 3/3 searches successfully
+2026-07-03 17:49:32,616 - researcher_rec:466 - researcher_rec - INFO - Starting report writing ...
+2026-07-03 17:51:31,619 - researcher_rec:492 - researcher_rec - INFO - Completed report writing
+2026-07-03 17:51:31,620 - researcher_rec:386 - researcher_rec - INFO - Research completed successfully
+2026-07-03 17:51:31,620 - self_evolverec:325 - __main__ - INFO - -------------------------------- Iteration 1 Deep Research Outcome All START --------------------------------
+2026-07-03 17:51:31,620 - self_evolverec:326 - __main__ - INFO - Research plans (2 plan(s)):
+2026-07-03 17:51:31,622 - self_evolverec:328 - __main__ - INFO -   Plan 1: {
+  "searches": [
+    {
+      "reason": "Currently the model uses only item IDs. The dataset provides rich meta data (title, categories, price, rating) and review texts. Incorporating textual features via pre-trained sentence embeddings (e.g., sentence-transformers) could substantially improve item representations, especially for cold items. This query targets recent methods that integrate textual side information into sequential recommenders, focusing on transformer-based architectures similar to HSTU. It aims to uncover fusion strategies (e.g., cross-modal attention, early fusion, or gating) that are feasible on CPU and can be extended later.",
+      "query": "content-aware sequential recommendation fusing text embeddings from titles and reviews transformer architecture 2024 2025"
+    },
+    {
+      "reason": "The training data includes interaction timestamps. The current HSTU likely relies on fixed positional encodings, ignoring the variable time gaps between actions. Incorporating relative time intervals (e.g., exponential decay of old interactions, or learnable time2vec) can capture real-world recency effects and improve recommendation relevance. This search focuses on lightweight, effective time-aware attention mechanisms that can be plugged into the SiLU-gated attention without adding heavy computation, making it practical for CPU training.",
+      "query": "relative time encoding sequential recommendation temporal dynamics attention decay 2024 2025"
+    },
+    {
+      "reason": "The model uses temperature-scaled sampled softmax loss, which is a form of contrastive learning. Switching to a more explicit contrastive objective (e.g., InfoNCE with in-batch negatives or hard negative mining based on item popularity) could yield more discriminative embeddings. This query explores alternatives that maintain efficiency (no full softmax) while boosting ranking metrics like NDCG. It challenges the assumption that the current loss is optimal, opening a path to a major architectural shift that still fits the 30‑minute‑per‑epoch CPU constraint.",
+      "query": "contrastive learning sampled softmax replacement sequential recommendation infoNCE hard negative mining 2024 2025"
+    }
+  ]
+}
+2026-07-03 17:51:31,623 - self_evolverec:328 - __main__ - INFO -   Plan 2: {
+  "searches": [
+    {
+      "reason": "The report proposes adding time embeddings to Q and K but does not detail how to compute time differences, enforce causality, or mask future information. The pseudocode only adds to K, not Q, and the interaction with SiLU-gated attention is not explained. Clarifying the correct formulation and masking is essential for a valid implementation.",
+      "query": "In HSTU (Hierarchical Sequential Transduction Unit) attention, which uses SiLU-gated linear attention without softmax, how can relative time embeddings be added to the key and query vectors to model recency? What is the correct formulation to ensure causality (i.e., only past time differences are used) and how should time differences be computed and masked? Provide examples or references to recent implementations of temporal encoding in non-softmax attention for sequential recommendation."
+    },
+    {
+      "reason": "The report suggests precomputing sentence embeddings from title and review text but does not specify how to combine multiple reviews (from different users) into one item-level embedding, nor how to handle missing metadata. This aggregation step is critical to avoid noise and ensure consistent input to the gate.",
+      "query": "When fusing item text metadata (title and multiple user reviews) into a sequential recommender, what is the standard method for aggregating multiple reviews per item into a single vector representation? Should we average all review embeddings, use a weighted average, or apply a separate aggregation network? Also, how to handle items with missing reviews or empty titles? References to 2024/2025 text-fusion approaches for recommendation would be helpful."
+    },
+    {
+      "reason": "The report claims the combined idea is CPU-friendly and fits the time budget, but it does not provide any estimation of the added runtime or memory. It also does not discuss potential overfitting or interaction effects when both temporal and text signals are introduced simultaneously. Verification of feasibility and robustness is needed.",
+      "query": "Is it computationally feasible to add both a relative time encoding MLP and a gated text fusion module to an HSTU model on CPU within 30 minutes per epoch for the Amazon Beauty dataset? What are the typical memory and latency overheads of such combined enhancements, and are there any known issues with overfitting or negative interaction between time and text signals when applied together?"
+    }
+  ]
+}
+2026-07-03 17:51:31,623 - self_evolverec:329 - __main__ - INFO - Research reports (2 report(s)):
+2026-07-03 17:51:31,623 - self_evolverec:331 - __main__ - INFO -   Report 1: ## Structured Framework
+
+### 1. Extract Insights
+
+**From the Starting Point (HSTU)**
+1. **SiLU‑gated attention** avoids softmax, enabling stable training with L2‑normalized embeddings and temperature‑scaled logits. This can be extended with temporal biases without breaking the gating mechanism.
+2. **L2‑normalised output embeddings** are well‐suited to contrastive losses, hinting that replacing sampled softmax with InfoNCE would be natural.
+3. **Absence of temporal and side‑information signals** limits the model’s ability to capture recency and content relevance, which directly explains the low recall and NDCG (user‑facing failures).
+
+**From Related Works**
+4. **Relative time encoding via exponential decay** on attention scores (or additive time2vec embeddings) yields 3–5 % NDCG gains on rec. datasets, and is CPU‑friendly (learnable λ per head, tiny parameter overhead).
+5. **Early fusion of precomputed sentence embeddings** with a learnable gate (concatenation + projection) significantly improves cold‑start and relevance, requiring only a few additional parameters.
+6. **InfoNCE loss with in‑batch negatives and popularity‑based hard negatives** outperforms sampled softmax, providing more discriminative embeddings under the same computational budget.
+
+### 2. Organise Research Directions
+
+| Direction                | Core Idea                                                                 | Addresses User Failure Modes           | Addresses Model Failure Modes       |
+|--------------------------|---------------------------------------------------------------------------|----------------------------------------|-------------------------------------|
+| Temporal Modelling       | Add relative time embedding or exponential decay to attention scores.      | Poor recency (low recall of recent items) | Missing temporal signal           |
+| Text Side Information    | Fuse title/review embeddings with a learned gate in the input layer.       | Cold‑start and content relevance (low NDCG) | Missing semantic information     |
+| Loss Function            | Replace sampled softmax with InfoNCE + in‑batch and popularity‑based hard negatives. | Embedding collapse (poor discriminative power) | Suboptimal negative sampling    |
+| Combined Temporal+Text   | Simultaneously integrate time decay and gated text fusion.                 | Recency and content relevance          | Missing temporal + semantic signals |
+
+### 3. Generate and Evaluate Ideas
+
+1. **Relative Time Decay on Attention Scores**  
+   Multiply pre‑gating similarity scores by exp(−λ·Δt) with learnable λ\.  
+   *Originality*: 5 (known technique, but novel in HSTU’s SiLU‑gated context).  
+   *Future Potential*: 7 (opens lightweight temporal modelling for non‑softmax attention).  
+   *User Diagnosis Alignment*: 8 (directly improves recency, raising recall/NDCG).  
+   *Model Diagnosis Alignment*: 7 (adds missing temporal feature).  
+   *Code Difficulty*: 3 (a few lines).
+
+2. **Gated Early Fusion of Text Embeddings**  
+   Concatenate precomputed all‑MiniLM‑L6‑v2 embedding, project, and gate with ID embedding.  
+   *Originality*: 6 (gating is common, but tailored to HSTU).  
+   *Future Potential*: 8 (text‑aware sequential recommenders are a growing area).  
+   *User Diagnosis Alignment*: 9 (addresses cold‑start and content relevance).  
+   *Model Diagnosis Alignment*: 8 (adds semantic signal).  
+   *Code Difficulty*: 4 (requires offline embedding and projection layer).
+
+3. **InfoNCE Loss with Popularity‑based Hard Negatives**  
+   Replace sampled softmax; use in‑batch negatives + top‑k popular items as hard negatives.  
+   *Originality*: 5 (standard in 2024).  
+   *Future Potential*: 7 (cleaner loss).  
+   *User Diagnosis Alignment*: 6 (improves ranking indirectly).  
+   *Model Diagnosis Alignment*: 8 (fixes suboptimal negative sampling).  
+   *Code Difficulty*: 5 (loss function rewrite).
+
+4. **Combined Time Decay + Text Fusion (BEST)**  
+   Add time2vec embedding to Q/K and gated text fusion to input.  
+   *Originality*: 8 (first to combine both in HSTU).  
+   *Future Potential*: 9 (establishes strong baseline for future HSTU variants).  
+   *User Diagnosis Alignment*: 9 (simultaneously tackles recency and cold‑start).  
+   *Model Diagnosis Alignment*: 9 (fills major gaps).  
+   *Code Difficulty*: 5 (two small modules).
+
+5. **Lightweight Temporal Bias Matrix**  
+   Learnable scalar bias per relative time bucket added to attention logits.  
+   *Originality*: 4 (similar to T5‑style bias).  
+   *Future Potential*: 5.  
+   *User Diagnosis Alignment*: 7.  
+   *Model Diagnosis Alignment*: 6.  
+   *Code Difficulty*: 3.
+
+### 4. Chosen Idea: **Temporal HSTU with Gated Text Fusion**
+
+**Rationale** – The baseline suffers from low recall/NDCG because it ignores recency (user‑facing failure) and lacks semantic side information (user‑facing failure). The model diagnosis confirms missing temporal and semantic signals. This idea explicitly addresses both by adding a time‑aware embedding to the attention keys/queries and a gated fusion of precomputed text embeddings. It is CPU‑friendly, requires ~30‑50 extra parameters, and fits the 30‑minute‑per‑epoch budget.
+
+**Implementation Details**
+1. **Text Fusion** – Precompute a fixed sentence embedding (e.g., all‑MiniLM‑L6‑v2, dimension 384) for each item’s title and review text offline. Inside the model, project the text vector to `hidden_dim` via a linear layer. For each item’s ID embedding `e_id`, compute a gate:  
+   `g = σ(W_gate · [e_id; text_proj])`  
+   `e_fused = (1-g) * e_id + g * text_proj`  
+   (where `[·;·]` denotes concatenation). Use the fused embedding as input to the HSTU blocks.
+2. **Temporal Encoding** – For each item pair (i,j) with time difference Δt = t_i – t_j, compute a time‑interval embedding `t_emb = MLP(Δt)` (a small 2‑layer MLP with 16→16→`attention_dim`). Add `t_emb` to the key and query vectors before the attention computation in every HSTU block. This implicitly injects recency into the gated attention.
+3. **Pseudocode** (key modifications):
+```python
+# Precompute text embeddings offline
+item_text_emb = sentence_model.encode([title + ' ' + review])  # (N, 384)
+
+# Inside model forward
+class HSTUWithTextAndTime(nn.Module):
+    def __init__(self):
+        self.text_proj = nn.Linear(384, hidden_dim)
+        self.gate = nn.Linear(2*hidden_dim, hidden_dim)
+        self.time_mlp = nn.Sequential(nn.Linear(1, 16), nn.SiLU(), nn.Linear(16, attn_dim))
+        # original HSTU blocks
+
+    def forward(self, item_ids, time_diffs):
+        id_emb = self.item_embedding(item_ids)   # (B, L, hidden_dim)
+        text_emb = self.text_proj(item_text_emb[item_ids])  # (B, L, hidden_dim)
+        gate_in = torch.cat([id_emb, text_emb], dim=-1)
+        g = torch.sigmoid(self.gate(gate_in))
+        fused = (1-g)*id_emb + g*text_emb
+        # Compute time embedding from time_diffs (B, L, L)
+        t_emb = self.time_mlp(time_diffs.unsqueeze(-1))  # (B, L, L, attn_dim)
+        # Pass fused through HSTU blocks, adding t_emb to Q, K in each block
+        for block in self.blocks:
+            q = block.q_proj(fused)      # (B, L, num_heads, dim_per_head)
+            k = block.k_proj(fused) + t_emb
+            v = block.v_proj(fused)
+            # HSTU attention: (SiLU(q) * (k @ v)) / sqrt(d)
+            attn_out = (F.silu(q) * (k @ v.transpose(-2,-1))) / math.sqrt(d)
+            fused = block.ffn(attn_out) + fused
+        return self.output_head(fused)
+```
+Changes are additive and do not require retraining the entire model from scratch; the new parameters can be trained with the same sampled softmax loss (or optionally InfoNCE in a later iteration).
+
+**Expected Impact** – The temporal encoding directly improves the ranking of recently interacted items (recency failure), and the text fusion provides content‑based relevance, especially for cold‑start items (improving NDCG). Together they address the two most critical user‑facing failure modes and the model’s missing signal gaps, promising a 3–5 % absolute gain in HR@5 and NDCG@5, as observed in similar works.
+
+**References** – Recent 2024/2025 studies on relative time encoding and text‑aware sequential recommenders (search results 1 & 2) confirm the effectiveness and CPU feasibility of these techniques.
+2026-07-03 17:51:31,624 - self_evolverec:331 - __main__ - INFO -   Report 2: ## Structured Framework
+
+### 1. Extract Insights
+
+**From the Starting Point (HSTU)**
+1. **SiLU‑gated attention** avoids softmax, enabling stable training with L2‑normalized embeddings and temperature‑scaled logits. The architecture can absorb a relative time bias matrix without breaking the gating mechanism.
+2. **L2‑normalised output embeddings** are well‑suited to contrastive losses, hinting that replacing sampled softmax with InfoNCE would be natural (considered as a future direction).
+3. **Absence of temporal and side‑information signals** limits the model’s ability to capture recency and content relevance, which directly explains the low recall and NDCG (user‑facing failures).
+
+**From Related Works**
+4. **Relative time encoding via a learned bias MLP** on attention scores yields 3–5 % NDCG gains on rec. datasets, and is CPU‑friendly. The original HSTU paper already uses a time bias matrix added to QK^T before the SiLU gate.
+5. **Early fusion of aggregated review/title embeddings** with a learnable gate significantly improves cold‑start and relevance, requiring only a few additional parameters. Mean‑pooling all reviews per item is simple and effective; a learnable placeholder handles missing reviews.
+6. **InfoNCE loss with in‑batch and popularity‑based hard negatives** outperforms sampled softmax, providing more discriminative embeddings under the same computational budget.
+
+### 2. Organise Research Directions
+
+| Direction                | Core Idea                                                                 | Addresses User Failure Modes           | Addresses Model Failure Modes       |
+|--------------------------|---------------------------------------------------------------------------|----------------------------------------|-------------------------------------|
+| Temporal Modelling       | Add relative time bias MLP to pre‑SiLU attention scores.                  | Poor recency (low recall of recent items) | Missing temporal signal           |
+| Text Side Information    | Fuse mean‑pooled review embeddings with a learned gate in the input layer.| Cold‑start and content relevance (low NDCG) | Missing semantic information     |
+| Loss Function            | Replace sampled softmax with InfoNCE + in‑batch and popularity‑based hard negatives. | Embedding collapse (poor discriminative power) | Suboptimal negative sampling    |
+| Combined Temporal+Text   | Simultaneously integrate time bias and gated text fusion.                 | Recency and content relevance          | Missing temporal + semantic signals |
+
+### 3. Generate and Evaluate Ideas
+
+1. **Relative Time Bias MLP**  
+   Add a small MLP(Δt) → scalar bias to QK^T before SiLU, as in the original HSTU paper.  
+   *Originality*: 5 (known technique, but not present in the baseline).  
+   *Future Potential*: 7 (brings the baseline up to the canonical HSTU design).  
+   *User Diagnosis Alignment*: 8 (directly improves recency).  
+   *Model Diagnosis Alignment*: 7 (adds missing temporal feature).  
+   *Code Difficulty*: 3 (a few lines).
+
+2. **Gated Early Fusion of Aggregated Text Embeddings**  
+   Mean‑pool offline review embeddings per item, project, and gate with ID embedding.  
+   *Originality*: 6 (gating is common, but adapted to HSTU with review aggregation).  
+   *Future Potential*: 8 (text‑aware sequential recommenders are a growing area).  
+   *User Diagnosis Alignment*: 9 (addresses cold‑start and content relevance).  
+   *Model Diagnosis Alignment*: 8 (adds semantic signal).  
+   *Code Difficulty*: 4 (offline embedding + projection layer).
+
+3. **InfoNCE Loss with Popularity‑based Hard Negatives**  
+   Replace sampled softmax; use in‑batch negatives + top‑k popular items as hard negatives.  
+   *Originality*: 5 (standard in 2024).  
+   *Future Potential*: 7 (cleaner loss).  
+   *User Diagnosis Alignment*: 6 (indirectly improves ranking).  
+   *Model Diagnosis Alignment*: 8 (fixes suboptimal negative sampling).  
+   *Code Difficulty*: 5 (loss function rewrite).
+
+4. **Combined Time Bias + Gated Text Fusion (BEST)**  
+   Add time bias MLP to attention scores and gated text fusion to input.  
+   *Originality*: 7 (first to combine both in an HSTU backbone under CPU constraints).  
+   *Future Potential*: 9 (establishes a strong multimodal HSTU baseline).  
+   *User Diagnosis Alignment*: 9 (simultaneously tackles recency and cold‑start).  
+   *Model Diagnosis Alignment*: 9 (fills major gaps).  
+   *Code Difficulty*: 5 (two small additive modules).
+
+5. **Lightweight Temporal Bias Matrix**  
+   Learnable scalar bias per relative time bucket added to attention logits.  
+   *Originality*: 4 (similar to bucket‑based bias).  
+   *Future Potential*: 5.  
+   *User Diagnosis Alignment*: 7.  
+   *Model Diagnosis Alignment*: 6.  
+   *Code Difficulty*: 3.
+
+### 4. Chosen Idea: **Temporal HSTU with Gated Text Fusion (Time Bias + Text)**
+
+**Rationale** – The baseline HSTU suffers from low recall/NDCG because it ignores recency (user‑facing failure) and lacks semantic side information (user‑facing failure). The model diagnosis confirms missing temporal and semantic signals. This idea explicitly addresses both by incorporating a relative time bias (as originally proposed in HSTU but absent in the baseline) and a gated fusion of aggregated review/title embeddings. It is CPU‑friendly, adds ~50–200k parameters, and fits the 30‑minute‑per‑epoch budget.
+
+**Implementation Details**
+1. **Text Fusion** – Offline, encode each review (title + text) using a lightweight sentence-transformer (e.g., all‑MiniLM‑L6‑v2, dim 384). For each item, mean‑pool all its review embeddings to obtain a single 384‑d vector. If an item has no reviews, use a learnable placeholder embedding. For empty titles, concatenate category names as the text. Inside the model, project the aggregated vector to `hidden_dim` via a linear layer. Compute a gate: `g = σ(W_gate [id_emb; text_proj])` and fuse: `fused = (1-g) * id_emb + g * text_proj`. The fused embedding replaces the original item embedding as input to the HSTU blocks.
+2. **Temporal Bias** – For each item pair (i, j) with time difference Δt = t_i − t_j (positive for past), a small 2‑layer MLP (16→16→1) maps Δt to a scalar bias. This bias is added to the pre‑SiLU attention scores: `G = SiLU(QK^T/√d + bias)`. Future positions (j > i) are masked with bias = −∞ to enforce causality. This matches the original HSTU paper’s time bias mechanism.
+3. **Regularization** – Dropout (0.1) is applied to the fused embedding and the hidden layer of the time MLP. Weight decay (1e‑4) is used on the new parameters. Early stopping is retained.
+4. **Pseudocode** (key modifications):
+```python
+# Offline: compute aggregated text embeddings per item
+from sentence_transformers import SentenceTransformer
+sbert = SentenceTransformer('all-MiniLM-L6-v2')
+item_text_emb = {}
+missing_emb = None  # will be a learnable Parameter
+for item_id, reviews in review_data.items():
+    emb_list = [sbert.encode(f"{r['title']} {r['text']}") for r in reviews]
+    if emb_list:
+        item_text_emb[item_id] = np.mean(emb_list, axis=0)
+    else:
+        item_text_emb[item_id] = None  # will use missing_emb
+
+class HSTUWithTextAndTimeBias(nn.Module):
+    def __init__(self):
+        self.text_proj = nn.Linear(384, hidden_dim)
+        self.gate = nn.Linear(2*hidden_dim, hidden_dim)
+        self.time_mlp = nn.Sequential(nn.Linear(1, 16), nn.SiLU(), nn.Dropout(0.1), nn.Linear(16, 1))
+        self.missing_text_emb = nn.Parameter(torch.zeros(384))
+        # original HSTU blocks
+
+    def forward(self, item_ids, time_diffs):
+        # item_ids: (B, L)
+        id_emb = self.item_embedding(item_ids)  # (B, L, H)
+        # lookup and aggregate text embeddings
+        text_vec = item_text_emb[item_ids]  # (B, L, 384)
+        mask = (text_vec == None).any(dim=-1)  # detect missing
+        text_vec[mask] = self.missing_text_emb
+        text_vec = self.text_proj(text_vec)  # (B, L, H)
+        gate_in = torch.cat([id_emb, text_vec], dim=-1)
+        g = torch.sigmoid(self.gate(gate_in))
+        fused = (1 - g) * id_emb + g * text_vec
+
+        # Compute time bias matrix from time_diffs (B, L, L)
+        # time_diffs[i,j] = t_i - t_j (positive for past)
+        bias = self.time_mlp(time_diffs.unsqueeze(-1)).squeeze(-1)  # (B, L, L, 1) -> (B, L, L)
+        # mask future: bias = -inf for j > i
+        causal_mask = torch.triu(torch.ones(L, L), diagonal=1).bool()
+        bias[causal_mask] = float('-inf')
+
+        # Pass fused through HSTU blocks with time bias
+        for block in self.blocks:
+            q = block.q_proj(fused)
+            k = block.k_proj(fused)
+            v = block.v_proj(fused)
+            # HSTU attention: G = SiLU(QK^T + bias)
+            scores = (q @ k.transpose(-2, -1)) / math.sqrt(d_k) + bias
+            G = F.silu(scores)
+            attn_out = (G @ v) * block.gate_proj(fused)  # pointwise gate
+            fused = block.ffn(attn_out) + fused
+        return self.output_head(fused)
+```
+
+**Expected Impact** – The temporal bias directly improves the ranking of recently interacted items (recency failure), and the text fusion provides content‑based relevance, especially for cold‑start items (improving NDCG). Together they address the two most critical user‑facing failure modes and the model’s missing signal gaps, promising a 3–5 % absolute gain in HR@5 and NDCG@5, as observed in similar works.
+
+**References** – Original HSTU paper (time bias matrix), 2024/2025 studies on text‑aware sequential recommenders (search results 2), and review aggregation best practices (search result on review pooling).
+2026-07-03 17:51:31,627 - self_evolverec:332 - __main__ - INFO - -------------------------------- Iteration 1 Deep Research Outcome All END --------------------------------
+2026-07-03 17:51:31,627 - self_evolverec:333 - __main__ - INFO - The new idea for model in iteration 1:
+{
+  "description": "Combine a relative time bias matrix (learned via a small MLP from Δt) added to the pre-SiLU attention scores with gated early fusion of precomputed aggregated review/title text embeddings. The time bias explicitly captures recency; the text fusion provides semantic content, addressing cold-start and relevance failures. Mean-pooling aggregates all reviews per item offline; missing reviews are handled by a learnable placeholder embedding. Dropout and weight decay are applied to mitigate overfitting from the added parameters.",
+  "motivation": "The baseline HSTU suffers from low recall/NDCG because it ignores recency (user-facing failure) and lacks semantic side information (user-facing failure). Model diagnosis confirms missing temporal and semantic signals. This idea explicitly addresses both by incorporating a relative time bias (as originally proposed in HSTU but absent in the baseline) and a gated fusion of aggregated review/title embeddings. It is CPU-friendly, adds minimal overhead, and directly targets the two most critical failure modes.",
+  "implementation_notes": "1. Offline: Use sentence-transformers (e.g., all-MiniLM-L6-v2) to encode each review (title + text). For each item, mean-pool all its review embeddings. If no reviews exist, use a learnable placeholder vector (initialized by averaging all item embeddings). Empty titles: concatenate category names as text. 2. Time bias: For each item pair (i,j) with Δt = t_i - t_j (positive for past), apply a 2-layer MLP (16→16→1) to Δt to produce a scalar bias. Set bias to -∞ for future positions (mask). Add to QK^T before SiLU, as in the original HSTU paper. 3. Text fusion: Inside the model, project the aggregated text vector to hidden_dim, compute gate g = σ(W [id_emb; text_proj]), then fuse = (1-g)*id_emb + g*text_proj. Use fused embedding as input to HSTU blocks. 4. Regularization: Add dropout (0.1) on the fused embedding and on the time bias MLP hidden layer; use weight decay 1e-4 on the new parameters. Early stopping as usual.",
+  "pseudocode": "Pseudocode (Python-like, not executable, just for illustration).\n\n```python\n# Offline: compute aggregated text embeddings per item\nfrom sentence_transformers import SentenceTransformer\nsbert = SentenceTransformer('all-MiniLM-L6-v2')\nitem_text_emb = {}\nmissing_emb = None  # will be a learnable Parameter\nfor item_id, reviews in review_data.items():\n    emb_list = [sbert.encode(f\"{r['title']} {r['text']}\") for r in reviews]\n    if emb_list:\n        item_text_emb[item_id] = np.mean(emb_list, axis=0)\n    else:\n        item_text_emb[item_id] = None  # will use missing_emb\n\nclass HSTUWithTextAndTimeBias(nn.Module):\n    def __init__(self):\n        self.text_proj = nn.Linear(384, hidden_dim)\n        self.gate = nn.Linear(2*hidden_dim, hidden_dim)\n        self.time_mlp = nn.Sequential(nn.Linear(1, 16), nn.SiLU(), nn.Dropout(0.1), nn.Linear(16, 1))\n        self.missing_text_emb = nn.Parameter(torch.zeros(384))\n        # original HSTU blocks\n\n    def forward(self, item_ids, time_diffs):\n        # item_ids: (B, L)\n        id_emb = self.item_embedding(item_ids)  # (B, L, H)\n        # lookup and aggregate text embeddings\n        text_vec = item_text_emb[item_ids]  # (B, L, 384)\n        mask = (text_vec == None).any(dim=-1)  # detect missing\n        text_vec[mask] = self.missing_text_emb\n        text_vec = self.text_proj(text_vec)  # (B, L, H)\n        gate_in = torch.cat([id_emb, text_vec], dim=-1)\n        g = torch.sigmoid(self.gate(gate_in))\n        fused = (1 - g) * id_emb + g * text_vec\n\n        # Compute time bias matrix from time_diffs (B, L, L)\n        # time_diffs[i,j] = t_i - t_j (positive for past)\n        bias = self.time_mlp(time_diffs.unsqueeze(-1)).squeeze(-1)  # (B, L, L, 1) -> (B, L, L)\n        # mask future: bias = -inf for j > i\n        causal_mask = torch.triu(torch.ones(L, L), diagonal=1).bool()\n        bias[causal_mask] = float('-inf')\n\n        # Pass fused through HSTU blocks with time bias\n        for block in self.blocks:\n            q = block.q_proj(fused)\n            k = block.k_proj(fused)\n            v = block.v_proj(fused)\n            # HSTU attention: G = SiLU(QK^T + bias)\n            scores = (q @ k.transpose(-2, -1)) / math.sqrt(d_k) + bias\n            G = F.silu(scores)\n            attn_out = (G @ v) * block.gate_proj(fused)  # pointwise gate\n            fused = block.ffn(attn_out) + fused\n        return self.output_head(fused)\n```",
+  "originality": {
+    "score": 7,
+    "positive": "No prior work has combined a relative time bias MLP with gated text fusion inside an HSTU model specifically for the Beauty domain under CPU constraints. The use of mean-pooled review aggregation with a learnable missing embedding is a practical yet novel adaptation.",
+    "negative": "The relative time bias is a known technique from the canonical HSTU paper; the text fusion via gated concatenation is a standard approach from 2024 text-aware recommenders. The combination is straightforward."
+  },
+  "future_potential": {
+    "score": 9,
+    "positive": "Establishes the first HSTU variant that jointly models temporal dynamics and semantic content with a principled bias-based attention, opening a new direction for multimodal HSTU enhancements and serving as a strong baseline for future CPU-friendly sequential recommenders.",
+    "negative": "Because the time bias is already part of the canonical HSTU paper, the novelty is limited to the combination with text fusion, which may be seen as an incremental addition."
+  },
+  "code_difficulty": {
+    "score": 5,
+    "positive": "Both modules are small (few hundred parameters each) and purely additive; the offline text embedding step is a one-time compute. The resulting model still fits within the 30-minute training budget on CPU.",
+    "negative": "Requires two new modules (time bias MLP and text fusion gate) plus offline review aggregation, which adds moderate complexity and may require careful batching of time differences."
+  }
+}
+
+
+2026-07-03 17:51:31,630 - coder_rec:409 - coder_rec - INFO - Starting code development ...
+2026-07-03 17:53:46,321 - _base_client:1618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.386674 seconds
+2026-07-03 17:56:48,275 - _base_client:1618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.881556 seconds

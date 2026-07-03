@@ -1,0 +1,21 @@
+{
+  "description": "The user provides a title and description of the paper SASRec: Self-Attentive Sequential Recommendation, along with a link to the arXiv paper. The assistant is asked to summarize the core ideas. The assistant based on the description and internal knowledge, provides a concise summary covering the problem, model architecture, training, and evaluation.",
+  "motivation": "none",
+  "implementation_notes": "none",
+  "pseudocode": "none",
+  "originality": {
+    "score": 0,
+    "positive": "none",
+    "negative": "none"
+  },
+  "future_potential": {
+    "score": 0,
+    "positive": "none",
+    "negative": "none"
+  },
+  "code_difficulty": {
+    "score": 0,
+    "positive": "none",
+    "negative": "none"
+  }
+}

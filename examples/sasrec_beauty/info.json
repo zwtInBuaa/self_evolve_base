@@ -1,0 +1,13 @@
+{
+  "problem": {
+    "name": "SASRec_Beauty_Recommendation",
+    "description": "You are an expert ML engineer tasked with improving a SASRec (Self-Attentive Sequential Recommendation) model on the Beauty domain. The model uses multi-head self-attention with causal masking and sampled softmax loss.\n\nHardware / Runtime Requirements:\n- CPU or GPU. Use device handling (e.g., device = torch.device('cuda'); model.to(device)).\n- Training time is limited to ~30 minutes per epoch. Keep model changes efficient.\n\nLibraries Allowed:\n- numpy, scipy, pandas, torch, scikit-learn, networkx, transformers, sentence-transformers, regex, RapidFuzz, matplotlib, shapely, omegaconf, PyYAML, openai, requests, tqdm, safetensors\n\nModel Architecture:\n- SASRec uses multi-head self-attention with causal masking, point-wise feed-forward networks, and sampled softmax loss.\n- Key hyperparameters: hidden_dim=128, num_blocks=1, num_heads=1, dropout=0.2.\n\nAcceptance Checklist:\n- Training loss decreases and stays finite.\n- HR@5 and NDCG@5 metrics improve over the baseline.",
+    "metric": "combined_score",
+    "interface": "self_evolverec_interface.py"
+  },
+  "initial_idea": {
+    "title": "SASRec: Self-Attentive Sequential Recommendation for Beauty",
+    "content": "SASRec uses multi-head self-attention with causal masking to model user interaction sequences. Unlike RNN-based models, self-attention captures long-range dependencies with adaptive weights. The model uses sampled softmax loss for efficient training on large item catalogs. Applied to the Amazon Beauty dataset with leave-one-out evaluation.",
+    "supplement": "https://arxiv.org/pdf/1808.09781"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "runtime_minutes": 47.81,
+  "ndcg_score(0-1)": 0.024416914107277102,
+  "hr_score(0-1)": 0.03576299017561437,
+  "combined_score": 0.031224559748279465,
+  "simulator_comment": "HSTU Beauty: Recall@10=0.0439, NDCG@10=0.0258",
+  "diagnosis_comment": "Best val: Recall@5=0.0358, NDCG@5=0.0244"
+}

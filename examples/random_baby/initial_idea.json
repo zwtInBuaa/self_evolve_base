@@ -1,0 +1,21 @@
+{
+  "description": "The Random Recommender Baseline is a simple, non-learned model that assigns random scores to items, optionally incorporating item popularity as a weighting factor. It serves as a performance lower bound to contextualize the effectiveness of learned sequential recommendation models like HSTU and SASRec.",
+  "motivation": "",
+  "implementation_notes": "",
+  "pseudocode": "",
+  "originality": {
+    "score": 0,
+    "positive": "",
+    "negative": ""
+  },
+  "future_potential": {
+    "score": 0,
+    "positive": "",
+    "negative": ""
+  },
+  "code_difficulty": {
+    "score": 0,
+    "positive": "A non-learned random recommender baseline. Scores are random draws, optionally weighted by item popularity. Serves as a lower-bound for comparing learned models (HSTU, SASRec, etc.).",
+    "negative": "none"
+  }
+}
