@@ -1,21 +1,21 @@
 {
-  "description": "HSTU introduces a novel non-softmax attention mechanism for sequential recommendation. It replaces softmax with SiLU activation on attention scores, using a mask value of 0.0 instead of -inf to avoid NaN when entire rows are masked. Output embeddings are L2-normalized and logits are temperature-scaled for stable sampled softmax training. The model is evaluated on Amazon Beauty with leave-one-out.",
-  "motivation": "",
-  "implementation_notes": "",
-  "pseudocode": "NA",
+  "description": "The HSTU model introduces a non-softmax attention mechanism for sequential recommendation, using SiLU-gated attention with a 0.0 masking strategy to avoid softmax issues. It employs L2-normalized output embeddings and temperature-scaled logits for stable sampled softmax training. The model is applied to the Amazon Beauty dataset under a leave-one-out evaluation protocol, replacing the standard softmax-based SASRec approach.",
+  "motivation": "To address the limitations of softmax attention in sequential recommendation, such as the fully-masked-row NaN issue and the need for stable training with sampled softmax, by leveraging a gated SiLU-based attention mechanism.",
+  "implementation_notes": "The attention mechanism uses SiLU activation on attention scores and masks with 0.0 instead of -inf, preventing the NaN problem that occurs when all rows are masked in softmax. Output embeddings are L2-normalized, and logits are temperature-scaled for sampled softmax, improving training stability.",
+  "pseudocode": "Not provided, but the core steps could be: 1) Compute attention scores; 2) Apply SiLU activation; 3) Mask with 0.0 for padding/ causal positions; 4) Compute weighted sum; 5) L2-normalize output embeddings; 6) Use temperature-scaled logits for sampled softmax loss.",
   "originality": {
-    "score": -1,
-    "positive": "NA",
-    "negative": "NA"
+    "score": 0,
+    "positive": "positive",
+    "negative": "negative"
   },
   "future_potential": {
-    "score": -1,
-    "positive": "NA",
-    "negative": "NA"
+    "score": 0,
+    "positive": "positive",
+    "negative": "negative"
   },
   "code_difficulty": {
-    "score": -1,
-    "positive": "NA",
-    "negative": "NA"
+    "score": 0,
+    "positive": "positive",
+    "negative": "negative"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "description": "This entry describes a project to enhance model diagnosis tools by integrating mathematical, code, and research paper analysis. The linked paper, 'Grad-CAM++: Generalized Gradient-based Visual Explanations for Deep Convolutional Networks', provides a concrete method for improving visual explanations of CNN predictions. The core idea is to generate more faithful and complete heatmaps by mathematically refining the gradient weighting scheme used in Grad-CAM.",
-  "motivation": "Existing model diagnosis tools like Grad-CAM often fail to localize multiple instances of the same class and produce incomplete coverage of the object. The research was motivated by the need for a more complete visual explanation that can handle multiple occurrences and provide better object localization, enabling deeper trust and debugging of deep networks.",
-  "implementation_notes": "The core mathematical improvement involves computing pixel-wise importance weights using a combination of the first-order gradient and higher-order partial derivatives. A closed-form solution for the weights is derived, making the method efficient. The implementation (available in the paper) builds on top of Grad-CAM code, replacing the average-pooling of gradients with a weighted sum where the weights are determined by the gradient's interaction with the feature map activations and second-order derivatives. The final heatmap is a linear combination of forward activation maps with these learned weights, followed by ReLU to retain only positive influences.",
-  "pseudocode": "1. For a target class c, compute the gradient of the score y^c with respect to the feature map A^k of a convolutional layer. \n2. Instead of global average pooling, compute pixel-wise weights \u03b1^k_{ij} as: \n   \u03b1^k_{ij} = (\u2202^2 y^c / (\u2202A^k_{ij})^2) / (2 * (\u2202^2 y^c / (\u2202A^k_{ij})^2) + \u03a3_a \u03a3_b A^k_{ab} * (\u2202^3 y^c / (\u2202A^k_{ij})^3)) \n   (This is the closed-form derived from the positivity constraint and the sum of weights equals 1)\n3. Then the weight for feature map k, w_k, is the sum over all spatial locations of \u03b1^k_{ij} * ReLU(\u2202 y^c / \u2202 A^k_{ij}). \n4. The class-discriminative saliency map is L^c_{Grad-CAM++} = ReLU( \u03a3_k w_k A^k ). \n5. Optionally fuse with guided backpropagation for high-resolution visualization: Multiply the upsampled heatmap with the guided backprop map element-wise.\n(Note: The exact formula in the paper uses the gradient of the score after the exponential function, but the principle is the same.)\nAlternatively, a simpler effective formulation: w_k = \u03a3_i \u03a3_j (\u2202 y^c / \u2202 A^k_{ij}) / (\u03a3_i \u03a3_j \u2202 y^c / \u2202 A^k_{ij} + \u03a3_k \u03a3_i \u03a3_j A^k_{ij} * \u2202^2 y^c / (\u2202 A^k_{ij})^2) * ReLU(\u2202 y^c / \u2202 A^k_{ij}). This is a generalized version of the Grad-CAM weight that incorporates higher-order derivatives to capture spatial importance more accurately, especially for multiple instances of the same class in the image. The final map is L^c = ReLU(\u03a3_k w_k A^k).\nThe pseudocode is as described in the paper: compute gradients of class score wrt feature maps, compute alpha weights using second and third derivatives, then compute w_k, then combine with activations. The paper also discusses using the exponentiated score (softmax) to enhance stability.",
+  "description": "game of life",
+  "motivation": "fun to code",
+  "implementation_notes": "The code is not functional and the idea is not very original",
+  "pseudocode": "The code is not functional and the idea is not very original",
   "originality": {
-    "score": 5,
-    "positive": "medium",
-    "negative": "medium"
+    "score": -1,
+    "positive": "The idea is very original",
+    "negative": "The idea is not very original and has already been implemented many times"
   },
   "future_potential": {
-    "score": 5,
-    "positive": "medium",
-    "negative": "medium"
+    "score": 1,
+    "positive": "The idea could be very useful for the communauty",
+    "negative": "The idea is not very original and has already been implemented many times"
   },
   "code_difficulty": {
-    "score": 5,
-    "positive": "medium",
-    "negative": "medium"
+    "score": -1,
+    "positive": "The code is very well structured and documented",
+    "negative": "The code in the repository is not functionnal: it is lacking a lot of elements and cannot be used"
   }
 }

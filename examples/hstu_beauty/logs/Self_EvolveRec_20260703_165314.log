@@ -1,0 +1,10 @@
+2026-07-03 16:53:14,973 - self_evolverec:133 - __main__ - INFO - Logging to examples/hstu_beauty/logs/Self_EvolveRec_20260703_165314.log
+2026-07-03 16:53:14,975 - database2:121 - database2 - INFO - Initialized program database with 0 programs
+2026-07-03 16:53:14,980 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
+2026-07-03 16:54:11,565 - problem:71 - problem - WARNING - Initial metrics file not found at examples/hstu_beauty/initial_metrics.json. Running initial evaluation from scratch.
+2026-07-03 16:54:11,566 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
+2026-07-03 16:54:13,281 - main_code:210 - main_code - INFO - Loading data from data_cache/Beauty...
+2026-07-03 16:54:13,603 - main_code:215 - main_code - INFO - Data loaded: 35931 users, 85200 items, 35931 train_users, 35931 eval_users
+2026-07-03 16:56:41,071 - main_code:284 - main_code - INFO - Epoch 1/20: loss=7.2968, val_R@5=0.0113, val_R@10=0.0154, val_N@5=0.0081, time=145s, best=-1.0000, no_impr=0
+2026-07-03 16:58:59,192 - main_code:284 - main_code - INFO - Epoch 2/20: loss=5.5699, val_R@5=0.0177, val_R@10=0.0231, val_N@5=0.0126, time=138s, best=0.0154, no_impr=0
+2026-07-03 17:01:19,465 - main_code:284 - main_code - INFO - Epoch 3/20: loss=4.6512, val_R@5=0.0223, val_R@10=0.0293, val_N@5=0.0162, time=140s, best=0.0231, no_impr=0

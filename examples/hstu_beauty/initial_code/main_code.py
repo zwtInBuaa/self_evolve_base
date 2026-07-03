@@ -6,6 +6,7 @@ Training logic adapted from _AAAI_/run_hstu.py, data loaded from data_cache/Beau
 from __future__ import annotations
 
 import json
+import logging
 import math
 import os
 import random
@@ -176,6 +177,8 @@ def evaluate_exact(
 # ====== Main entry point for self_evolverec ======
 
 def main(args):
+    logger = logging.getLogger(__name__)
+
     # ---- Config ----
     dataset_path = "data_cache/Beauty"
     # HSTU params from _AAAI_/run_hstu.py
@@ -204,10 +207,12 @@ def main(args):
     torch.manual_seed(seed)
 
     # ---- Load data ----
+    logger.info(f"Loading data from {dataset_path}...")
     user_sequences, num_users, num_items = load_sequences_from_json(dataset_path)
     splits = build_leave_one_out_splits(user_sequences)
     train_users = [user for user, split in splits.items() if len(split.train) >= 2]
     eval_users = sorted(train_users)
+    logger.info(f"Data loaded: {num_users} users, {num_items} items, {len(train_users)} train_users, {len(eval_users)} eval_users")
 
     dataset = HSTUTrainDataset(splits=splits, max_len=max_len, train_window_size=train_window_size, train_targets=train_targets)
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=False, drop_last=False)
@@ -230,6 +235,8 @@ def main(args):
     for epoch in range(1, epochs + 1):
         model.train()
         epoch_start = time.time()
+        epoch_loss = 0.0
+        step_count = 0
 
         for step, batch in enumerate(loader, start=1):
             if train_targets == 'last_position':
@@ -253,6 +260,9 @@ def main(args):
             nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
             optimizer.step()
 
+            epoch_loss += float(loss.item())
+            step_count += 1
+
             # Time check
             if step > 5:
                 elapsed = time.time() - epoch_start
@@ -270,6 +280,12 @@ def main(args):
                                      eval_batch_size=eval_batch_size, device=device, mode='val')
         val_score = val_metrics['Recall@10']
 
+        epoch_sec = time.time() - epoch_start
+        logger.info(f"Epoch {epoch}/{epochs}: loss={epoch_loss/max(step_count,1):.4f}, "
+                    f"val_R@5={val_metrics['Recall@5']:.4f}, val_R@10={val_score:.4f}, "
+                    f"val_N@5={val_metrics['NDCG@5']:.4f}, time={epoch_sec:.0f}s, "
+                    f"best={best_val:.4f}, no_impr={no_improve_evals}")
+
         if val_score > best_val:
             best_val = val_score
             best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
@@ -286,6 +302,8 @@ def main(args):
 
     test_metrics = evaluate_exact(model=model, splits=splits, users=eval_users, max_len=max_len,
                                   eval_batch_size=eval_batch_size, device=device, mode='test')
+    logger.info(f"Test: R@5={test_metrics['Recall@5']:.4f}, R@10={test_metrics['Recall@10']:.4f}, "
+                f"N@5={test_metrics['NDCG@5']:.4f}, N@10={test_metrics['NDCG@10']:.4f}")
 
     best_valid_hr = best_val_metrics.get('Recall@5', 0.0) if best_state else 0.0
     best_valid_ndcg = best_val_metrics.get('NDCG@5', 0.0) if best_state else 0.0
