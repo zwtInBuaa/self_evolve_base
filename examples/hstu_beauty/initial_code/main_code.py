@@ -178,24 +178,25 @@ def evaluate_exact(
 def main(args):
     # ---- Config ----
     dataset_path = "data_cache/Beauty"
-    max_len = args.maxlen
-    hidden_dim = getattr(args, 'hidden_units', 128)
-    linear_dim = getattr(args, 'linear_dim', 16)
-    attention_dim = getattr(args, 'attention_dim', 16)
-    num_blocks = getattr(args, 'num_blocks', 1)
-    num_heads = getattr(args, 'num_heads', 1)
-    dropout = args.dropout_rate
-    attn_dropout = getattr(args, 'attn_dropout', 0.0)
-    batch_size = args.batch_size
-    eval_batch_size = getattr(args, 'eval_batch_size', args.batch_size)
-    epochs = 20  # 与 _AAAI_/run_hstu.py 一致，args.num_epochs 默认 300 太大
-    lr = args.lr
-    num_negatives = getattr(args, 'num_negatives', 500)
-    temperature = getattr(args, 'temperature', 0.05)
+    # HSTU params from _AAAI_/run_hstu.py
+    max_len = 50
+    hidden_dim = 128
+    linear_dim = 16
+    attention_dim = 16
+    num_blocks = 1
+    num_heads = 1
+    dropout = 0.5
+    attn_dropout = 0.0
+    batch_size = 128
+    eval_batch_size = 128
+    epochs = 20
+    lr = 3e-4
+    num_negatives = 500
+    temperature = 0.05
     train_targets = 'all_positions'
     train_window_size = 0
     early_stop_patience = 3
-    seed = 42
+    seed = 20260521
     device = torch.device(args.device)
 
     random.seed(seed)
