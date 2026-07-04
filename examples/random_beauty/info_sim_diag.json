@@ -1,7 +1,7 @@
 {
   "problem_diagnosis": {
     "name": "Random Baseline",
-    "description": "Random recommender baseline - no diagnosis needed.",
+    "description": "Random recommender baseline - no diagnosis needed.\n\n重要约束：纯序列化建模，仅使用用户交互序列（item IDs），不可以加入文本嵌入（text embedding）、图像特征、评论内容等任何外部模态信息。只允许使用序列中的 item ID 进行建模。",
     "metric": "combined_score",
     "interface": "self_evolverec_interface.py"
   },

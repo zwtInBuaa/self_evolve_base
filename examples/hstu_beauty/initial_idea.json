@@ -1,21 +1,21 @@
 {
-  "description": "The HSTU model introduces a non-softmax attention mechanism for sequential recommendation, using SiLU-gated attention with a 0.0 masking strategy to avoid softmax issues. It employs L2-normalized output embeddings and temperature-scaled logits for stable sampled softmax training. The model is applied to the Amazon Beauty dataset under a leave-one-out evaluation protocol, replacing the standard softmax-based SASRec approach.",
-  "motivation": "To address the limitations of softmax attention in sequential recommendation, such as the fully-masked-row NaN issue and the need for stable training with sampled softmax, by leveraging a gated SiLU-based attention mechanism.",
-  "implementation_notes": "The attention mechanism uses SiLU activation on attention scores and masks with 0.0 instead of -inf, preventing the NaN problem that occurs when all rows are masked in softmax. Output embeddings are L2-normalized, and logits are temperature-scaled for sampled softmax, improving training stability.",
-  "pseudocode": "Not provided, but the core steps could be: 1) Compute attention scores; 2) Apply SiLU activation; 3) Mask with 0.0 for padding/ causal positions; 4) Compute weighted sum; 5) L2-normalize output embeddings; 6) Use temperature-scaled logits for sampled softmax loss.",
+  "description": "The HSTU model introduces a SiLU-gated attention mechanism for sequential recommendation, replacing softmax attention with a SiLU activation on attention scores. This allows masking padded positions with 0.0 instead of -inf, which prevents the NaN problem that can occur when an entire row is masked in softmax attention. The model also normalizes output embeddings using L2 normalization and applies temperature scaling to logits, enabling stable training with sampled softmax. The approach is evaluated on the Amazon Beauty dataset using leave-one-out evaluation, demonstrating its effectiveness for sequential recommendation tasks.",
+  "motivation": "The motivation is to improve sequential recommendation by avoiding the NaN issue in softmax attention when rows are fully masked, and to stabilize training with L2 normalization and temperature scaling.",
+  "implementation_notes": "The HSTU model applies SiLU-gated attention (a non-softmax attention mechanism) to sequential recommendation. Unlike standard SASRec which uses softmax attention, HSTU uses SiLU activation on attention scores and masks with 0.0 instead of -inf, avoiding the fully-masked-row NaN problem. Output embeddings are L2-normalized and logits are temperature-scaled for stable sampled softmax training. The model is applied to the Amazon Beauty dataset with leave-one-out evaluation.",
+  "pseudocode": "Not provided in the content, but the core ideas are described.",
   "originality": {
     "score": 0,
-    "positive": "positive",
-    "negative": "negative"
+    "positive": "product",
+    "negative": "product"
   },
   "future_potential": {
     "score": 0,
-    "positive": "positive",
-    "negative": "negative"
+    "positive": "product",
+    "negative": "product"
   },
   "code_difficulty": {
     "score": 0,
-    "positive": "positive",
-    "negative": "negative"
+    "positive": "product",
+    "negative": "product"
   }
 }

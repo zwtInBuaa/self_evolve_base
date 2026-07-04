@@ -1,8 +1,0 @@
-2026-07-04 03:53:03,728 - self_evolverec:133 - __main__ - INFO - Logging to examples/hstu_pet/logs/Self_EvolveRec_20260704_035303.log
-2026-07-04 03:53:03,732 - database2:121 - database2 - INFO - Initialized program database with 0 programs
-2026-07-04 03:53:03,741 - self_evolverec:193 - __main__ - INFO - Adding initial program to database
-2026-07-04 03:53:38,731 - problem:71 - problem - WARNING - Initial metrics file not found at examples/hstu_pet/initial_metrics.json. Running initial evaluation from scratch.
-2026-07-04 03:53:38,731 - problem:76 - problem - INFO - Starting evaluation with 0 retries.
-2026-07-04 03:53:40,801 - main_code:210 - main_code - INFO - Loading data from data_cache/Pet...
-2026-07-04 03:53:40,981 - main_code:215 - main_code - INFO - Data loaded: 22892 users, 41950 items, 22892 train_users, 22892 eval_users
-2026-07-04 03:55:07,344 - main_code:284 - main_code - INFO - Epoch 1/20: loss=7.3823, val_R@5=0.0073, val_R@10=0.0121, val_N@5=0.0047, time=84s, best=-1.0000, no_impr=0

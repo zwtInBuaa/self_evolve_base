@@ -1,7 +1,7 @@
 {
   "problem_diagnosis": {
     "name": "Recommendation",
-    "description": "You are an expert ML engineer tasked with designing and improving *diagnosis tools* for a sequential recommendation model.\n\nGoal: Build probes and metrics that analyze how the recommender behaves (embedding health, sequence sensitivity, popularity biases, etc.).\n\nHardware / Runtime Requirements: Lightweight probes that run on the same device as the model.\n\nAvailable Objects: Trained model embeddings, meta_data, review_data, user_train.\n\nAcceptance Checklist: MODEL_DIAGNOSIS is a single, well-defined JSON-like dict with metric values and definitions.",
+    "description": "You are an expert ML engineer tasked with designing and improving *diagnosis tools* for a sequential recommendation model.\n\nGoal: Build probes and metrics that analyze how the recommender behaves (embedding health, sequence sensitivity, popularity biases, etc.).\n\nHardware / Runtime Requirements: Lightweight probes that run on the same device as the model.\n\nAvailable Objects: Trained model embeddings, meta_data, review_data, user_train.\n\nAcceptance Checklist: MODEL_DIAGNOSIS is a single, well-defined JSON-like dict with metric values and definitions.\n\n重要约束：纯序列化建模，仅使用用户交互序列（item IDs），不可以加入文本嵌入（text embedding）、图像特征、评论内容等任何外部模态信息。只允许使用序列中的 item ID 进行建模。",
     "metric": "combined_score",
     "interface": "self_evolverec_interface.py"
   },

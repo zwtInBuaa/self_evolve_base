@@ -1,8 +1,0 @@
-{
-  "runtime_minutes": 0.43,
-  "ndcg_score(0-1)": 0.003698109130580305,
-  "hr_score(0-1)": 0.005757751835613544,
-  "combined_score": 0.0049338947536002485,
-  "simulator_comment": "Random baseline: R@10=0.0108, N@10=0.0053",
-  "diagnosis_comment": "Non-learned baseline. Strategy=popularity, pop_temp=1.0"
-}
