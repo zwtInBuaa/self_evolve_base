@@ -10,5 +10,22 @@
 __pycache__/
 *.out
 *.pyc
+# 大数据文件（可通过脚本重新生成）
+data_cache/*/review.json
+data_cache/*/train_review.json
+data_cache/*/meta.json
+data_cache/*/test.json
+data_cache/*/valid.json
+data_cache/*/train.json
 
-data_cache/*
+# 原始下载文件
+_raw_data/
+
+# 运行产物
+logs/
+ckpt/
+initial_idea*.json
+initial_metrics.json
+*.log
+__pycache__/
+.DS_Store
